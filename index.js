@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//const element = <h1>Hello There</h1>;
-//ReactDOM.render(element, document.getElementById("root"));
-/*function user(){
+const element = <h1>Hello There</h1>;
+ReactDOM.render(element, document.getElementById("root"));
+function user(){
     return firstname + " " + lastname;
 }
 let firstname = "Will";
@@ -12,11 +12,11 @@ const input = <h2>Hello {user(firstname,lastname)}</h2>;
 const name = ReactDOM.createRoot(
     document.getElementById('root')
 );
-name.render(input);*/
+name.render(input);
 
-//const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-/*function tick(){
+function tick(){
 
     const element =(
     <div>
@@ -27,16 +27,16 @@ name.render(input);*/
     ReactDOM.render(element, document.getElementById('root'));
 }
 
-setInterval(tick);*/  /*setInterval is a method that calls a function or runs some code after specific intervals of time, as specified through the second parameter*/
+setInterval(tick); 
 
-/*class Welcome extends React.Component{
+class Welcome extends React.Component{
 render(){
 return <h1>Hello {this.props.name}</h1>;
 }
 }
 
 const element = <Welcome name = 'William'/>
-ReactDOM.render(element, document.getElementById('root'));*/
+ReactDOM.render(element, document.getElementById('root'));
 
 function Comment(props){
     return(
