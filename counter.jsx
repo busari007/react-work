@@ -2,25 +2,31 @@ import React, { Component } from 'react';
 
 class Counter extends React.Component {
     state = {
-        count:0
+        count:0,
     }
     styles = {
-        fontSize:30,
-        fontWeight:"bold",     //testing styles
-        color:"black"
+        fontSize:25,
+        fontWeight:'bold',
+        color: "black
     }
     render() { 
-        return (
-        <div>
-        <span style = {this.styles} className="badge badge-primary m-2">{this.formatCount()}</span>  
-        <button className="btn btn-secondary btm-sm m-3">Increment</button>
-        </div>
-        );
+        let text = this.counterColor();
+        return <div>
+            <span style={this.styles}className={text}>{this.formatCounter()}</span>
+            <button className="btn btn-secomdary m-4">Increment</button>
+        </div>;
     }
-    formatCount(){
-        const {count} = this.state;                //testing states
-        return count === 0 ? "Zero" : count;
+    counterColor() {
+        let text = "badge m-2 ";
+        text += (this.state.count === 0) ? "badge-warning" : "badge-primary";
+        return text;
+    }
+
+    formatCounter(){
+        const {count} = this.state;
+        return count === 0 ? 'Zero' : count;
     }
 }
+
  
 export default Counter;
